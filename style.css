@@ -1,49 +1,36 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
+div {
+    width: 70%; 
+    margin: 30px auto; 
+    padding: 20px; 
+    border-style: double; 
+    border-width: 8px; 
+    
+    text-align: center; 
+    
+    font-family: 'Verdana', sans-serif; 
+    border-radius: 10px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
 }
-
 
 #vung1 {
-    width: 250px;
-    background-color: black;
-    padding: 20px;
-    border-right: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-#vung1 a {
-    display: block;
-    padding: 5px 0;
-    text-decoration: none;
-    color: green;
-}
-
-#vung1 a:hover {
-    color: red;
-    text-decoration: underline;
+    border-color: black; 
+    background-color: white; 
 }
 
 #vung2 {
-    flex-grow: 1;
-    padding: 20px;
-}
- {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
+    border-color: black; 
+    background-color: blue; 
 }
 
- {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
+#vung3 {
+    border-color: black; 
+    background-color: green; 
 }
 
- {
-    background-color:blue;
-    color: white;
+.vung-image {
+    max-width: 90%; 
+    height: auto; 
+    margin-top: 15px; 
+    border: 3px dotted; 
+    border-radius: 5px;
 }
-

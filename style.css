@@ -14,7 +14,7 @@ div {
 
 #vung1 {
     border-color: black; 
-    background-color: white; 
+    background-color: green; 
 }
 
 #vung2 {
@@ -24,7 +24,7 @@ div {
 
 #vung3 {
     border-color: black; 
-    background-color: green; 
+    background-color: orange; 
 }
 
 .vung-image {
@@ -34,3 +34,4 @@ div {
     border: 3px dotted; 
     border-radius: 5px;
 }
+

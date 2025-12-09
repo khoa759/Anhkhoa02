@@ -4,6 +4,85 @@
     <meta charset="UTF-8">
     <title>Home HTML</title>
     <link rel="stylesheet" href="style.css"> 
+    <style>
+        /* Để chạy thử nhanh, tôi tạm đặt các kiểu dáng CSS ở đây. 
+           Nếu bạn dùng file style.css riêng, hãy bỏ phần <style> này. */
+
+        /* CSS KHUNG CHUNG (GIẢ ĐỊNH) */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #vung1, #vung2, #vung3 {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Giả định màu nền để test form */
+        #vung1 { background-color: green; color: white; }
+        #vung2 { background-color: blue; color: white; } /* Màu nền xanh để test màu vàng của form */
+        #vung3 { background-color: orange; color: black; }
+
+        .nav-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        /* CSS CHO FORM (TỪ YÊU CẦU CỦA BẠN) */
+        .form-khung {
+            border: 3px solid yellow; /* Viền màu vàng dày 3px */
+            padding: 20px; /* Tạo không gian bên trong khung */
+            margin-top: 15px; /* Khoảng cách với Bảng điểm */
+            border-radius: 8px; /* Bo tròn góc nhẹ */
+            color: yellow; /* Đảm bảo text bên trong khung vẫn là màu vàng của Vùng 2 */
+        }
+
+        /* Tối ưu hiển thị input, select và button trên nền xanh */
+        .form-khung input[type="text"],
+        .form-khung input[type="email"],
+        .form-khung select {
+            color: black; 
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 3px;
+            border-radius: 3px;
+            width: 200px; /* Cố định chiều rộng cho dễ nhìn */
+            margin: 5px 0;
+            display: block; /* Đặt mỗi input trên một dòng mới */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .form-khung button {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .form-khung button[type="submit"] {
+            background-color: #ffc107; /* Màu vàng cam cho Đăng nhập */
+            color: #333;
+        }
+
+        .form-khung button[type="button"] {
+            background-color: #e53935; /* Màu đỏ cho Thoát */
+            color: white;
+        }
+
+    </style>
 </head>
 <body>
     <div id="vung1">
@@ -20,6 +99,28 @@
         <h2>Bảng Điểm Môn Học</h2>
         <img src="2542751390276494061.jpg" alt="Bảng điểm môn học của học sinh" style="max-width: 100%; height: auto; border: 1px solid #ddd;">
         <p>Một số nội dung</p> 
+
+        <div class="form-khung">
+            <h3>Đăng Nhập Hệ Thống</h3>
+            <form action="#" method="post">
+                <label for="username">Tên đăng nhập:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Mật khẩu:</label>
+                <input type="text" id="password" name="password" required>
+
+                <label for="role">Vai trò:</label>
+                <select id="role" name="role">
+                    <option value="student">Học sinh</option>
+                    <option value="teacher">Giáo viên</option>
+                    <option value="admin">Quản trị viên</option>
+                </select>
+
+                <br>
+                <button type="submit">Đăng nhập</button>
+                <button type="button">Thoát</button>
+            </form>
+        </div>
         </div>
 
     <div id="vung3">
@@ -30,5 +131,3 @@
     </div>
 </body>
 </html>
-
-
